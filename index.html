@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Google Check</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/css/semantic.min.css" />
+        <link rel="stylesheet" href="main.css" />
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="ui message">
+            <p>Hackers descrobiram as senhas de quase cinco milh&otilde;es de contas de e-mail do Google.<br/>
+            Verifique se a sua conta foi uma delas.</p>
+        </div>
+
+        <div id="content" class="ui center middle aligned column grid">
+            <div class="row">
+                <div class="six wide column">
+                    <img width="269" height="95" src="https://www.google.com/images/srpr/logo11w.png" alt="Google"/>
+                    <p class="text">
+                        <input id="email" class="gbqfif" type="text" autocomplete="off" value="" placeholder="Seu e-mail">
+                    </p>
+                    <div class="gbqfbwa">
+                        <button onclick="checkemail()" class="gbqfba"><span id="gbqfsa">Verificar</span></button>
+                    </div>
+
+                    <div id="message"></div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+
+</body>
+</html>

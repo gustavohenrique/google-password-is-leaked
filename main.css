@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v8/ODelI1aHBYDBqgeIAH2zlNzbP97U9sKh0jjxbPbfOKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v8/toadOcfmlt9b38dHJxOBGLsbIrGiHa6JIepkyt5c0A0.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#content {
+  padding-top: 40px;
+}
+
+p.text { 
+  padding: 20px 0px 0px 0px;
+}
+
+.gbqfif {
+  border: 1px solid silver;
+  padding: 5px;
+  margin: 0px;
+  height: auto;
+  width: 525px;
+  left: 0px;
+}
+
+.gbqfba {
+  border: 1px solid #dcdcdc;
+  border-color: rgba(0,0,0,0.1);
+  color: #444!important;
+  font-size: 11px;
+  font: bold 11px/27px Arial,sans-serif;
+  vertical-align: top;
+  background: #f5f5f5;
+  background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background: linear-gradient(top,#f5f5f5,#f1f1f1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f5f5f5,endColorstr=#f1f1f1,GradientType=1);
+  font-weight: bold;
+  height: 29px;
+  line-height: 29px;
+  min-width: 54px;
+  padding: 0 8px;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#message {
+  font-size: 12pt;
+}

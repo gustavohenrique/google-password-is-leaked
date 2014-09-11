@@ -1,0 +1,17 @@
+{
+  "name": "google-50000000",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "keywords": [
+    "nodejs",
+    "redis"
+  ],
+  "author": "Gustavo Henrique",
+  "license": "MIT",
+  "dependencies": {
+    "grep1": "0.0.5",
+    "journey": "^0.4.0-pre-3"
+  },
+  "devDependencies": {}
+}
