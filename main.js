@@ -5,33 +5,33 @@ var config = {
     i18n: {
         enUS : {
             found: {
-                text: 'Sorry! Your account was compromised.',
-                cls: 'ui red message'
+                text: 'Your account was compromised.',
+                cls: 'alert-box alert'
             },
             notFound: {
-                text: 'Keep calm, your account was not compromised.',
-                cls: 'ui green message'
+                text: 'Your account was not compromised.',
+                cls: 'alert-box success'
             },
             validation: {
                 text: 'Invalid e-mail.',
-                cls: 'ui red message'
+                cls: 'alert-box alert'
             },
-            about: 'Nearly 5 Million Google Passwords Leaked on Russian Site.<br/>Check if your was compromised.'
+            about: 'Nearly 5 Million Google Passwords Leaked on Russian Site.<br/>Check if your account was compromised.'
         },
         ptBR : {
             found: {
                 text: 'Infelizmente sua conta foi comprometida.',
-                cls: 'ui red message'
+                cls: 'alert-box alert'
             },
             notFound: {
-                text: 'Fique tranquilo(a), sua conta n&atilde;o foi comprometida.',
-                cls: 'ui green message'
+                text: 'Sua conta n&atilde;o foi comprometida.',
+                cls: 'alert-box success'
             },
             validation: {
                 text: 'E-mail inv&aacute;lido',
-                cls: 'ui red message'
+                cls: 'alert-box alert'
             },
-            about: 'Quase 5 milh&otilde;es de senhas de contas do Google vazaram num site Russo.<br/>Verifique se a sua foi comprometida.'
+            about: 'Quase 5 milh&otilde;es de senhas de contas do Google vazaram em um site Russo.<br/>Verifique se a sua conta foi comprometida.'
         }
     },
     messages: {}
@@ -43,7 +43,7 @@ var app = {
         div.removeClass(config.messages.found.cls);
         div.removeClass(config.messages.notFound.cls);
         div.addClass(message.cls);
-        div.html('<i class="close icon"></i><div class="header"></div>' + message.text);
+        div.html('<i class="close icon"></i><div class="header"></div>' + message.text + '<a href="#" class="close">&times;</a>');
     },
 
     isValid: function (email) {
@@ -76,4 +76,10 @@ var app = {
 
 $(document).ready(function () {
     app.load('ptBR');
+    $('#email').keypress(function( event ) {
+        if ( event.which == 13 ) {
+            event.preventDefault();
+            app.checkEmail();
+        }
+    });
 });
