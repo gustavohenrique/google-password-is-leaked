@@ -57,3 +57,28 @@ p.text {
 #message {
   font-size: 12pt;
 }
+
+.right {
+  float: right;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.flag {
+  width: 21px;
+  height: 15px;
+  border: 1px dotted white;
+  float: right;
+  margin: 5px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.flag.usa {
+  background-image: url('images/usa.gif');
+}
+
+.flag.bra {
+  background-image: url('images/bra.gif');
+}

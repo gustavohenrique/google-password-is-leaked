@@ -2,13 +2,12 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Google Check</title>
+        <title>Check if your Google Account was compromised</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
      
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/css/semantic.min.css" />
         <link rel="stylesheet" href="main.css" />
-
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -16,8 +15,11 @@
         <![endif]-->
 
         <div class="ui message">
-            <p>Hackers descrobiram as senhas de quase cinco milh&otilde;es de contas de e-mail do Google.<br/>
-            Verifique se a sua conta foi uma delas.</p>
+            <p id="about"></p>
+            <div class="right">
+                <div id="usa" class="flag usa" onclick="app.load('enUS')"></div>
+                <div id="bra" class="flag bra" onclick="app.load('ptBR')"></div>
+            </div>
         </div>
 
         <div id="content" class="ui center middle aligned column grid">
@@ -25,10 +27,10 @@
                 <div class="six wide column">
                     <img width="269" height="95" src="https://www.google.com/images/srpr/logo11w.png" alt="Google"/>
                     <p class="text">
-                        <input id="email" class="gbqfif" type="text" autocomplete="off" value="" placeholder="Seu e-mail">
+                        <input id="email" class="gbqfif" type="text" autocomplete="off" value="" placeholder="E-mail">
                     </p>
                     <div class="gbqfbwa">
-                        <button onclick="checkemail()" class="gbqfba"><span id="gbqfsa">Verificar</span></button>
+                        <button onclick="app.checkEmail()" class="gbqfba"><span>Ok</span></button>
                     </div>
 
                     <div id="message"></div>
