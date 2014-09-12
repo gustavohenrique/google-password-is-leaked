@@ -57,7 +57,7 @@ var app = {
             email = $('#email').val();
 
         if ($this.isValid(email)) {
-            $.post(URL, {'email': email})
+            $.post(config.url, {'email': email})
              .done(function (data) { $this.showMessage(config.messages.found); })
              .fail(function (data) { $this.showMessage(config.messages.notFound); });
         }
